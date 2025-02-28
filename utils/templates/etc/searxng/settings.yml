@@ -57,21 +57,114 @@ enabled_plugins:
 #     - '(.*\.)?wikipedia.org$'
 
 engines:
+  # General search engines with good privacy
+  - name: duckduckgo
+    disabled: false
+    weight: 3
+    timeout: 7.0
+    shortcut: ddg
 
-#   - name: fdroid
-#     disabled: false
-#
-#   - name: apk mirror
-#     disabled: false
-#
-#   - name: mediathekviewweb
-#     categories: TV
-#     disabled: false
-#
-#   - name: invidious
-#     disabled: false
-#     base_url:
-#       - https://invidious.snopyta.org
-#       - https://invidious.tiekoetter.com
-#       - https://invidio.xamh.de
-#       - https://inv.riverside.rocks
+  - name: brave
+    disabled: false
+    weight: 3
+    timeout: 7.0
+    shortcut: brave
+
+  - name: startpage
+    disabled: false
+    weight: 3
+    timeout: 7.0
+    shortcut: sp
+
+  - name: searx
+    disabled: false
+    weight: 1
+    timeout: 7.0
+    shortcut: sx
+
+  # Big search engines (good results but less privacy)
+  - name: google
+    disabled: false
+    weight: 2
+    timeout: 7.0
+    shortcut: g
+
+  - name: bing
+    disabled: false
+    weight: 1
+    timeout: 7.0
+    shortcut: b
+
+  # Specialized search engines
+  - name: wikipedia
+    disabled: false
+    weight: 2
+    shortcut: wp
+
+  - name: stackoverflow
+    disabled: false
+    shortcut: so
+
+  - name: github
+    disabled: false
+    shortcut: gh
+
+  - name: arxiv
+    disabled: false
+    shortcut: arx
+
+  - name: semantic scholar
+    disabled: false
+    shortcut: ss
+
+  # Images
+  - name: google images
+    disabled: false
+    shortcut: gi
+
+  - name: bing images
+    disabled: false
+    shortcut: bi
+
+  # Videos
+  - name: youtube
+    disabled: false
+    shortcut: yt
+
+  # News
+  - name: google news
+    disabled: false
+    shortcut: gn
+
+  # Maps
+  - name: openstreetmap
+    disabled: false
+    shortcut: osm
+
+  # Torrents
+  - name: piratebay
+    disabled: false
+    shortcut: tpb
+
+  - name: nyaa
+    disabled: false
+    shortcut: nyaa
+
+  # Science
+  - name: pubmed
+    disabled: false
+    shortcut: pm
+
+  # Shopping
+  - name: amazon
+    disabled: false
+    shortcut: az
+
+  # IT
+  - name: npm
+    disabled: false
+    shortcut: npm
+
+  - name: pypi
+    disabled: false
+    shortcut: pypi
